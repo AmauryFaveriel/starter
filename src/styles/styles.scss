@@ -1,0 +1,45 @@
+@import "./global/reset"; /* ./global/_reset.scss */
+@import "./global/variables"; /* ./global/variables.scss */
+
+
+//Import Mixins
+@import "./mixins/responsive";
+
+
+//Import Components
+@import "./components/header";
+@import "./components/forminput";
+
+.container{
+  display: flex;
+  height: 100vh;
+  margin: 5px;
+  &-left{
+    width: 300px;
+    height: auto;
+  }
+
+  &-right{
+    margin: 5px;
+    &-top{
+      width: 500px;
+      height: auto;
+      margin-bottom: 5px;
+    }
+    &-bottom{
+      width: 200px;
+      height: 200px;
+      margin-right: 5px;
+    }
+  }
+}
+
+.text{
+  margin-left:10px;
+  &-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+}
